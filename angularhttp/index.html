@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Code Reader</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular-resource.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+    <h1>Programming Book Dashboard!</h1>
+
+
+    <hr />
+
+    <div ng-controller="BooksCtrl">
+
+
+        <ul ng-repeat="book in books">
+
+            <li>{{book.title}}</li>
+            <li>{{book.author}}</li>
+            <li>{{book.isbn}}</li>
+            <li>{{book.pageCount}}</li>
+            <li>{{book.publisher}}</li>
+            <li>{{book.url}}</li>
+
+
+        </ul>
+
+
+
+    </div>
+
+
+</body>
+</html>
